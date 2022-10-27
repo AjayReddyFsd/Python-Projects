@@ -16,7 +16,7 @@ def wordCloudGenerator():
     if text != '':
         wordCloud = WordCloud().generate(text)
         plt.imshow(wordCloud)
-        plt.axis('off')
+        plt.axis('off')  # to remove the axes on the plot
         st.pyplot()
 
 
